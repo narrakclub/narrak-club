@@ -12,21 +12,23 @@
 
     body {
       margin: 0;
-      height: 100vh;
-      background: linear-gradient(180deg, #1a001f, #32004a);
-      color: #ffd6e7;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffb6d5, #ff7eb3);
+      color: #7a003c;
       font-family: 'Press Start 2P', cursive;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
+      overflow-x: hidden;
+      padding: 20px;
     }
 
     .screen {
-      border: 6px solid #ff77aa;
+      border: 6px solid #ff4f9a;
       padding: 28px;
-      background: #120014;
-      box-shadow: 0 0 0 6px #ff2f92;
+      background: #ffe6f0;
+      box-shadow: 0 0 0 6px #ff9acb;
+      width: 100%;
       max-width: 620px;
       text-align: center;
       position: relative;
@@ -59,7 +61,7 @@
       font-family: inherit;
       font-size: 10px;
       background: #1f0024;
-      color: #ffd6e7;
+      color: #7a003c;
       border: 4px solid #ffd6e7;
       outline: none;
       margin-bottom: 14px;
@@ -94,6 +96,23 @@
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.4; }
+    }
+    @media (max-width: 480px) {
+      .screen {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 9px;
+      }
+
+      .btn {
+        width: 100%;
+      }
     }
   </style>
 </head>
